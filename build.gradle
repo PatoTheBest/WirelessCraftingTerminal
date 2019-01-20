@@ -28,7 +28,7 @@ minecraft {
 }
 
 repositories {
-	
+
 	maven {
 		name = "progwml6"
 		url = "http://dvs1.progwml6.com/files/maven"
@@ -38,31 +38,39 @@ repositories {
 		url = "http://maven.tterrag.com"
 	}
 	maven {
+		name = "tterrag2"
+		url = "http://maven2.tterrag.com"
+	}
+	maven {
 		url "http://mobiusstrip.eu/maven"
 	}
 	maven {
-		 name = "epoxide"
-		 url = "http://maven.epoxide.xyz"
-	 }
-	 maven {
 		name = "tehnut"
 		url = "http://tehnut.info/maven"
 	}
 	maven {
-        name = "covers Maven"
-        url = "http://maven.covers1624.net"
-    }
+		name = "covers Maven"
+		url = "http://maven.covers1624.net"
+	}
+
+	maven {
+		url 'http://maven.mcmoddev.com'
+	}
+	maven { url 'https://jitpack.io' }
 }
 dependencies {
 	deobfCompile "mezz.jei:jei_1.12.2:+"
 	//compile project(':appliedenergistics2')
 	deobfCompile "com.enderio.core:EnderCore:1.12.2-0.5.37"
 	deobfCompile "mcp.mobius.waila:Hwyla:1.8.26-B41_1.12.2"
-	deobfCompile "net.darkhax.tesla:Tesla-1.12:1.0.61"
+    deobfCompile "net.darkhax.tesla:Tesla-1.12:1.0.61"
 	deobfCompile "mcp.mobius.waila:Hwyla:1.8.20-B35_1.12"
 	deobfCompile "appeng:appliedenergistics2:rv6-beta-1"
 	deobfCompile "cofh:RedstoneFlux:1.12-2.0.2.4:universal"
 	deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.23-16"
+	deobfCompile "p455w0rdslib:p455w0rdslib:1.12.2-2.0.35"
+	deobfCompile "com.github.azanor:Baubles:5df3d468af"
+	deobfCompile 'com.github.YaLTeR:MouseTweaks:-SNAPSHOT'
 }
 
 task apiJar(type: Jar) {
